@@ -1,13 +1,19 @@
 <template>
-  <v-app>
-    <v-main>
-      <router-view />
-    </v-main>
-
-    <AppFooter />
-  </v-app>
+    <v-app>
+        <AppBar />
+        <v-main>
+            <router-view />
+        </v-main>
+        <AppFooter />
+        <Auth />
+    </v-app>
 </template>
 
-<script setup>
-  //
+<script>
+//
+export default {
+    data() {
+        return {};
+    },
+};
 </script>

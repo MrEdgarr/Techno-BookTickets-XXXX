@@ -1,0 +1,83 @@
+.section-booking {
+  .booking-info {
+    .info-movie {
+      margin-block: 25px;
+      padding-block: 15px;
+      .v-card-title {
+        font-weight: 700;
+        font-size: 16px;
+        @include responsive_sm {
+          font-size: 18px;
+        }
+      }
+      .v-card-text {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        div {
+          width: 100%;
+          p {
+            font-size: 10px;
+          }
+          span {
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+        @include responsive_sm() {
+          div {
+            p {
+              font-size: 14px;
+            }
+            span {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .booking-payment {
+    margin-block: 25px;
+    padding-block: 15px;
+    .v-card-title {
+      font-weight: 700;
+      font-size: 16px;
+      @include responsive_sm {
+        font-size: 18px;
+      }
+    }
+    .payment-method.v-card-text {
+      .v-radio-group {
+        .v-radio {
+          label {
+            opacity: 1 !important;
+            p {
+              padding-left: 5px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .payment-expense.v-card-text {
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          font-size: 16px;
+          &:last-child {
+            font-weight: 600;
+            color: rgb(var(--v-theme-primary));
+          }
+        }
+      }
+    }
+    .payment-btn.v-card-text {
+      .v-btn:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

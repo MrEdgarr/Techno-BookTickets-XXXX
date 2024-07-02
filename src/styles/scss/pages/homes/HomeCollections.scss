@@ -1,0 +1,32 @@
+.section-collections {
+  padding-block: 2rem;
+  .wrapper-content {
+    .section-content {
+      .post-list {
+        .post-box {
+          padding-inline: 0.5rem;
+          .post-content {
+            margin-top: 14px;
+            h3.post-title {
+              width: 100%;
+              font-weight: 600;
+
+              text-transform: capitalize;
+              position: relative;
+              margin-bottom: 0;
+              text-align: center;
+              font-size: 16px;
+              cursor: pointer;
+
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+      }
+    }
+  }
+}

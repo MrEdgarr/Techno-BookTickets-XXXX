@@ -1,0 +1,96 @@
+.section-movie__detail {
+  .section-content {
+    .wrapper-content {
+      .showtime-filter {
+        padding-bottom: 50px;
+        .filter-items {
+          padding-inline: 0px;
+          &:not(:first-child) {
+            padding-block: 0;
+          }
+          @include responsive_sm {
+            padding-inline: 5px;
+            &:not(:first-child) {
+              padding-block: 12px;
+            }
+          }
+          .filter-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            @include responsive_md {
+              font-size: 20px;
+            }
+          }
+          .filter-date {
+            .v-item-group {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 5px;
+
+              .v-btn__content {
+                display: inline-flex;
+                flex-wrap: wrap;
+                font-size: 12px;
+                @include responsive_md {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .showtime__list {
+        .showtime__cinema {
+          .showtime__item {
+            padding-block: 30px;
+            padding-inline: 10px;
+            &:nth-child(even) {
+              background-color: rgb(var(--v-theme-secondary), 0.1);
+              border-top: 1px solid rgb(var(--v-theme-grey-500), 0.5);
+              border-bottom: 1px solid rgb(var(--v-theme-grey-500), 0.5);
+            }
+            .showtime__title {
+              margin-bottom: 20px;
+              h1 {
+                font-weight: 700;
+                font-size: 18px;
+              }
+              span {
+                font-size: 14px;
+              }
+            }
+            .showtime__bundle {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              align-items: flex-start;
+              margin-bottom: 20px;
+              @include responsive_md {
+                flex-direction: row;
+              }
+
+              label {
+                width: 150px;
+                font-weight: 600;
+                font-size: 14px;
+                margin-top: 8px;
+              }
+              .time__show {
+                a {
+                  display: flex;
+                  row-gap: 5px;
+                  column-gap: 5px;
+                  flex-wrap: wrap;
+                  flex-direction: row;
+                  flex: 1 1 0%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

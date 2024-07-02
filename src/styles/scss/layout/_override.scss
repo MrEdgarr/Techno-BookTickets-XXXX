@@ -1,0 +1,86 @@
+html {
+  font-family: $font-family;
+
+  .v-application {
+    [class*="text-"] {
+      font-family: $font-family, sans-serif !important;
+    }
+    font-family: $font-family, sans-serif !important;
+  }
+
+  .elevation-10 {
+    box-shadow: $box-shadow !important;
+  }
+  .v-card-header {
+    padding: 30px 30px 0.625rem;
+  }
+  .v-card-actions {
+    padding: 0.625rem 30px 30px;
+  }
+  .v-card {
+    border-radius: $border-radius;
+    width: 100%;
+  }
+  .v-btn {
+    text-transform: capitalize;
+    letter-spacing: $btn-letter-spacing;
+  }
+  .v-btn-group .v-btn {
+    height: inherit !important;
+  }
+
+  .v-navigation-drawer__scrim.fade-transition-leave-to {
+    display: none;
+  }
+
+  .theme-carousel .v-carousel__progress {
+    position: absolute;
+  }
+  .v-theme--light,
+  .v-theme--dark {
+    --v-theme-on-warning: 255, 255, 255;
+  }
+  .v-card.w-auto {
+    width: auto !important;
+  }
+  .v-overlay__content {
+    .v-list-item-title {
+      font-size: 14px;
+    }
+  }
+
+  //input
+  .v-field__field {
+    font-size: 14px;
+  }
+
+  // .v-input__details {
+  //   display: none;
+  // }
+
+  /*
+    👉 Tabs
+    Disable tab transition
+    This class will disable transition and adds `overflow: unset` on `VWindow` to allow spreading shadow
+    */
+  .disable-tab-transition {
+    overflow: unset !important;
+
+    .v-window__container {
+      block-size: auto !important;
+    }
+
+    .v-window-item:not(.v-window-item--active) {
+      display: none !important;
+    }
+
+    .v-window__container .v-window-item {
+      transform: none !important;
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .v-container {
+      width: 1280px !important;
+    }
+  }
+}

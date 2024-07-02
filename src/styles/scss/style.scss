@@ -1,0 +1,40 @@
+@use "vuetify/styles";
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap");
+
+@import "./layout/variables";
+@import "./layout/container";
+@import "./layout/global";
+@import "./layout/override";
+@import "./layout/responsive";
+
+// @import "./pages/  ?";
+// import components scss
+// ---------------------------------------
+// import page blosg
+@import "./pages/blogs/news.scss";
+@import "./pages/blogs/promotions.scss";
+
+// import page home
+@import "./pages/homes/HomeCollections.scss";
+@import "./pages/homes/HomeNews.scss";
+@import "./pages/homes/HomeQuickBuy.scss";
+@import "./pages/homes/HomeShowing.scss";
+@import "./pages/homes/HomeSlideBar.scss";
+@import "./pages/homes/HomeUpcoming.scss";
+
+// import page movie
+@import "./pages/movies/details/DetailContent.scss";
+@import "./pages/movies/details/DetailHeader.scss";
+@import "./pages/movies/MovieShowtime.scss";
+@import "./pages/movies/MovieUpcoming.scss";
+@import "./pages/movies/MovieShowing.scss";
+
+//seat
+@import "./pages/seats/seats.scss";
+
+// import page booking
+@import "./pages/booking/Booking.scss"; // @import "./pages/showtimes/"
+
+//auth
+@import "./pages/auth/auth.scss";

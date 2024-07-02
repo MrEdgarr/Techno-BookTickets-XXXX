@@ -1,0 +1,103 @@
+a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(var(--v-theme-grey-900));
+}
+.router-link-active {
+  border-bottom: 2px solid rgb(var(--v-theme-secondary));
+}
+.film__footer {
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  .film__btn {
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 0.875rem;
+    text-align: center;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2.5rem;
+    display: inline-flex;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+    color: rgb(var(--v-theme-grey-900)) !important;
+    &:hover {
+      background-color: rgb(var(--v-theme-secondary));
+      color: rgb(var(--v-theme-grey-50)) !important;
+    }
+  }
+}
+
+.section {
+  padding-block: 1.5rem;
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: space-between;
+  -ms-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -ms-align-items: center;
+  .box-header {
+    border-left: 4px solid rgb(var(--v-theme-secondary));
+
+    h2 {
+      margin-left: 8px;
+    }
+  }
+  .box-link {
+    margin-left: 20px;
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+      color: rgb(var(--v-theme-on-secondary));
+      background: rgb(var(--v-theme-secondary));
+      border-radius: 10px;
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .box-header {
+      h2 {
+        font-size: 18px;
+      }
+    }
+    .box-link {
+      a {
+        font-size: 12px;
+        padding: 4px 8px;
+      }
+    }
+  }
+}
+.section-banner {
+  .banner-title {
+    text-align: center;
+    color: rgb(var(--v-theme-grey-50));
+    padding-block: 45px;
+    h1 {
+      font-size: 26px;
+    }
+  }
+}
